@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Courier Malawi",
+    "slug": "courier-malawi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFC107"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.courier.malawi",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location to provide navigation during deliveries.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs access to your location to track deliveries in real-time."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFC107"
+      },
+      "package": "com.courier.malawi",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDummy-Key-For-Development"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Courier Malawi to use your location for delivery navigation."
+        }
+      ]
+    ]
+  }
+}
